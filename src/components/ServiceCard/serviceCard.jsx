@@ -6,19 +6,19 @@ const CardSection = () => {
       title: 'Advanced Analysis',
       description: 'Growth, Focus & Analysis',
       icon: '/orange-cube.png', // Use the orange cube image
-      borderColor: 'border-primary-orange',
+      borderColor: 'hover:border-primary-orange',
     },
     {
       title: 'Corporate Finance',
       description: 'Strategy is the Foundation',
       icon: '/green-cube.png', // Use the green cube image
-      borderColor: 'border-primary-green',
+      borderColor: 'hover:border-primary-green',
     },
     {
       title: 'Business Consultation',
       description: 'Professional Skilled Team',
       icon: '/blue-cube.png', // Use the blue cube image
-      borderColor: 'border-primary-blue',
+      borderColor: 'hover:border-primary-blue',
     },
   ];
 
@@ -28,7 +28,7 @@ const CardSection = () => {
         {cards.map((card, index) => (
           <div
             key={index}
-            className={`relative border-2 ${card.borderColor} p-4 w-1/3 flex justify-center gap-5 bg-black bg-opacity-80 hover:shadow-lg transition duration-300`}
+            className={`relative border-2 border-gray-600 border-transparent ${card.borderColor} p-4 w-1/3 flex justify-center gap-5 cursor-pointer bg-black bg-opacity-80 hover:shadow-lg transform hover:scale-105 transition duration-300 ease-in-out`}
           >
             <div className="flex items-center justify-center">
               <img src={card.icon} alt={card.title} className="w-12 h-12" />

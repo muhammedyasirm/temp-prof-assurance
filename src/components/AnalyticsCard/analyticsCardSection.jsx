@@ -7,25 +7,28 @@ const AnalyticsCardSection = () => {
       title: 'Chart Analysis 1',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       buttonText: 'Read More',
-      bgColor: 'bg-red-500',
-      buttonColor: 'bg-red-500',
+      defaultButtonColor: 'bg-transparent border-primary-orange text-primary-orange',
+      hoverButtonColor: 'hover:bg-primary-orange hover:text-white',
       imgSrc: '/chart1.png', // Replace with the actual image path
+      borderColor: 'hover:border-primary-orange',
     },
     {
       title: 'Chart Analysis 2',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       buttonText: 'Read More',
-      bgColor: 'bg-green-500',
-      buttonColor: 'bg-green-500',
+      defaultButtonColor: 'bg-transparent border-primary-green text-primary-green',
+      hoverButtonColor: 'hover:bg-primary-green hover:text-white',
       imgSrc: '/chart2.png', // Replace with the actual image path
+      borderColor: 'hover:border-primary-green',
     },
     {
       title: 'Chart Analysis 3',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       buttonText: 'Read More',
-      bgColor: 'bg-blue-500',
-      buttonColor: 'bg-blue-500',
+      defaultButtonColor: 'bg-transparent border-primary-blue text-primary-blue',
+      hoverButtonColor: 'hover:bg-primary-blue hover:text-white',
       imgSrc: '/chart3.png', // Replace with the actual image path
+      borderColor: 'hover:border-primary-blue',
     },
   ];
 
@@ -49,13 +52,13 @@ const AnalyticsCardSection = () => {
           {cards.map((card, index) => (
             <div
               key={index}
-              className={`border-2 p-4 w-1/3 flex flex-col items-center gap-5 bg-black bg-opacity-65 hover:shadow-lg transition duration-300`}
+              className={`border-2 border-gray-600 cursor-pointer ${card.borderColor} p-4 w-1/3 flex flex-col items-center gap-5 bg-black bg-opacity-65 hover:shadow-lg transition duration-300`}
             >
               <img src={card.imgSrc} alt={card.title} className="w-full h-40 object-cover" />
               <div className="text-center text-white">
                 <h3 className="text-xl mt-4 font-bold">{card.title}</h3>
                 <p className="mt-2 text-sm">{card.description}</p>
-                <button className={`${card.buttonColor} text-white px-4 py-2 mt-4 rounded`}>
+                <button className={`border-2 ${card.defaultButtonColor} ${card.hoverButtonColor} px-4 py-2 mt-4 rounded transition duration-300`}>
                   {card.buttonText}
                 </button>
               </div>

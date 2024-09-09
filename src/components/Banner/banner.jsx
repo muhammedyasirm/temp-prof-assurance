@@ -2,13 +2,16 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="relative flex items-center justify-between bg-gray-900 text-white h-screen"
-      style={{
-        backgroundImage: `url('/banner-background.png')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
-    >
+    <div className="relative flex items-center justify-between text-white h-screen">
+      {/* Video Background */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover z-0"
+        src="/banner-bg-video1.mp4"
+        autoPlay
+        loop
+        muted
+      ></video>
+
       {/* Overlay */}
       <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
 

@@ -23,11 +23,8 @@ const ProfitAssurance = () => {
         <div className="flex flex-col w-[40%]">
         <div className="text-left mb-12 mt-4">
           <h1 className="text-6xl font-bold uppercase tracking-wide">
-            PROFIT ASSURANCE
+            PROFIT ASSURANCE TECHNOLOGY
           </h1>
-          <h2 className="text-4xl font-semibold mt-2 tracking-widest">
-            TECHNOLOGY
-          </h2>
         </div>
         <div className="mx-auto text-left mt-5">
           <h3 className="text-3xl font-semibold mb-4">
