@@ -20,14 +20,14 @@ const Banner = () => {
         <img
           src="/banner-logo2.png"
           alt="Banner Logo"
-          className="w-[80%] h-full object-contain"
+          className="w-[75%] h-full object-contain"
         />
       </div>
 
       {/* Right Side: Text and Content */}
       <div className="w-[37%] p-10 flex flex-col text-left justify-center z-10">
-        <h1 className="text-5xl font-bold font-barlow">BIG TEXT</h1>
-        <p className="mt-4 text-2xl leading-loose font-montserrat">
+        <h1 className="text-[5rem] font-bold font-barlow">BIG TEXT</h1>
+        <p className="mt-4 text-[2.1rem] leading-8 font-montserrat">
           Lorem ipsum dolor sit amet,{" "}
           <span className="text-primary-orange font-bold">adipiscing</span> elit, sed do
           eiusmod tempor <span className="text-primary-blue font-bold">incididunt</span> ut
