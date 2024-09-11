@@ -2,32 +2,26 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="relative flex items-center justify-between text-white h-screen">
+    <div className="relative flex items-center justify-between text-white min-h-screen xl-down:min-h-[80vh]">
       {/* Video Background */}
       <video
-        className="absolute inset-0 w-full h-full object-cover z-0"
+        className="absolute w-full h-full object-cover z-0"
         src="/banner-bg-video1.mp4"
         autoPlay
         loop
         muted
       ></video>
-
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
-
-      {/* Left Side: Full Height and Larger Width for the Logo */}
-      <div className="w-[40%] h-full z-10">
+      
         <img
           src="/banner-logo2.png"
           alt="Banner Logo"
-          className="w-[75%] h-full object-contain"
+          className="w-[30%] lg-down:w-[40%] object-fill z-10 xl-down:hidden"
         />
-      </div>
 
       {/* Right Side: Text and Content */}
-      <div className="w-[37%] p-10 flex flex-col text-left justify-center z-10">
-        <h1 className="text-[5rem] font-bold font-barlow">BIG TEXT</h1>
-        <p className="mt-4 text-[2.1rem] leading-8 font-montserrat">
+      <div className=" p-10 flex flex-col w-[40%] xl-down:w-full text-left justify-center z-10">
+        <h1 className="text-[5rem] md-down:text-[4rem] font-bold font-barlow">BIG TEXT</h1>
+        <p className="mt-4 text-[2.2rem] md-down:[1.8rem] leading-8 font-montserrat">
           Lorem ipsum dolor sit amet,{" "}
           <span className="text-primary-orange font-bold">adipiscing</span> elit, sed do
           eiusmod tempor <span className="text-primary-blue font-bold">incididunt</span> ut

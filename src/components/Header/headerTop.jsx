@@ -1,4 +1,5 @@
 import React from "react";
+import CompactHeader from "./compactHeader";
 
 const Header = () => {
   const navItems = [
@@ -11,7 +12,8 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-black text-white">
+    <>
+      <header className="bg-black text-white lg-down:hidden block">
       {/* Top Section - Logo and Language Selector */}
       <div className="flex justify-between items-center px-6 py-2">
         {/* Language Selector */}
@@ -49,6 +51,10 @@ const Header = () => {
         </div>
       </div>
     </header>
+    <div className="hidden lg-down:block">
+        <CompactHeader />
+      </div>
+    </>
   );
 };
 

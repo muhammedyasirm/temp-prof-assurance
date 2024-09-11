@@ -20,9 +20,11 @@ const ConferenceSection = () => {
           incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. 
           Risus commodo viverra maecenas accumsan lacus vel facilisis.
         </p>
-        <button className="bg-primary-orange text-white px-6 py-3 text-lg rounded hover:bg-opacity-80 transition duration-300">
+        <div className='flex justify-end'>
+          <button className="bg-primary-orange text-white px-6 py-3 text-lg rounded hover:bg-opacity-80 transition duration-300">
           Read More
         </button>
+        </div>
       </div>
     </div>
   );

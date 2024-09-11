@@ -31,11 +31,11 @@ const ProfitAssurance = () => {
             </h1>
           </div>
           <div className="text-left mt-5">
-            <h3 className="text-3xl font-semibold mb-4 font-montserrat">
+            <h3 className="text-4xl font-semibold mb-4 font-montserrat">
               Enabling profitability for clients{" "}
               <span className="text-primary-green font-bold">since 2014</span>,
             </h3>
-            <p className="text-lg leading-relaxed font-montserrat">
+            <p className="text-xl leading-relaxed font-montserrat">
               consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
               labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
               gravida. Risus commodo viverra maecenas accumsan lacus vel

@@ -23,12 +23,12 @@ const CardSection = () => {
   ];
 
   return (
-    <div className="relative w-full text-white max-w-5xl mx-auto z-20 py-2 mt-[-110px]">
-      <div className="flex justify-center space-x-4">
+    <div className="relative w-70% text-white  mx-auto z-20 py-2 mt-[-110px] lg-down:mt-0">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         {cards.map((card, index) => (
           <div
             key={index}
-            className={`relative border-2 border-[#C1C1C1] border-[transparent] ${card.borderColor} p-4 w-1/3 flex justify-center gap-5 cursor-pointer bg-[#1C1C1C] hover:shadow-lg transform hover:scale-105 transition duration-300 ease-in-out`}
+            className={`border-2 border-[#C1C1C1] ${card.borderColor} p-4 xl-down:p-2 flex justify-center gap-5 cursor-pointer bg-[#1C1C1C] hover:shadow-lg transform hover:scale-105 transition duration-300 ease-in-out`}
           >
             <div className="flex items-center justify-center">
               <img src={card.icon} alt={card.title} className="w-12 h-12" />
