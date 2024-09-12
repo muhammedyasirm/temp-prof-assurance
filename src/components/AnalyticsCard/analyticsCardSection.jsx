@@ -47,13 +47,13 @@ const AnalyticsCardSection = () => {
       </div>
 
       {/* Chart Cards Section */}
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl md-down:max-w-full mx-auto">
         <h1 className='text-white flex justify-center text-5xl py-4 mt-3 font-barlow'>Some Title Here</h1>
-        <div className="flex justify-center space-x-4 mt-10">
+        <div className="flex justify-center md-down:flex-col md-down:gap-2 space-x-4 md-down:space-x-0 md-down:items-center mt-10">
           {cards.map((card, index) => (
             <div
               key={index}
-              className={`border-2 border-gray-600 cursor-pointer ${card.borderColor} p-4 w-1/3 flex flex-col items-center gap-5 bg-black bg-opacity-65 hover:shadow-lg transition duration-300`}
+              className={`border-2 border-gray-600 cursor-pointer ${card.borderColor} p-4 w-1/3 md-down:w-[90%] flex flex-col items-center gap-5 bg-black bg-opacity-65 hover:shadow-lg transition duration-300`}
             >
               <img src={card.imgSrc} alt={card.title} className="w-full h-40 object-cover" />
               <div className="text-center text-white">
