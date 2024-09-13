@@ -1,26 +1,46 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const PromoSection = () => {
+  // const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 1030);
+
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setIsSmallScreen(window.innerWidth <= 1030);
+  //   };
+
+  //   window.addEventListener("resize", handleResize);
+
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
+
   return (
-    <div className="w-full bg-[#1C1C1C] text-white flex items-center justify-between">
+    <div className="w-full bg-[#1C1C1C] text-white flex lg-down:flex-col lg-down:bg-cover lg-down:bg-center lg-down:bg-no-repeat items-center justify-between"
+    //  style={{
+    //    backgroundImage: isSmallScreen ? "url('/promo-logo.png')" : "none",
+    //  }}
+>
+  {/* Overlay for small screens */}
+  <div className="lg-down:block hidden absolute inset-0 bg-black bg-opacity-50"></div>
+
       {/* Left Section: Text Content */}
-      <div className="pl-24 py-16 max-w-[40%] flex flex-col h-full">
-        <h1 className="text-5xl font-bold mb-6 font-barlow">TITLE TEXT</h1>
-        <p className="text-[1.5rem] mb-8 mt-10 font-montserrat">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-          suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
-          lacus vel facilisis.
+      <div className="pl-24 lg-down:pl-0 lg-down:!px-6 py-14 max-w-[45%] lg-down:max-w-full flex flex-col h-full relative z-10">
+        <h1 className="text-5xl font-bold font-barlow lg-down:text-4xl">ENHANCE YOUR REVENUE</h1>
+        <p className="text-[1.5rem] mt-7 font-montserrat lg-down:text-base lg-down:mt-4">
+          Maximize your business potential with our tailored solutions. From revenue assurance to
+          fraud management, Profit Assurance Technology delivers expert services to enhance your
+          financial performance and safeguard your operations. Let us help you achieve your goals.
         </p>
-        <div className="flex justify-end mt-10">
-          <button className="bg-primary-orange text-white py-3 px-10 text-lg rounded hover:bg-opacity-80 transition duration-300">
-            GET STARTED
+        <div className="flex lg-down:justify-start justify-end lg-down:mt-5 mt-7">
+          <button className="bg-primary-orange text-white py-3 px-8 text-lg rounded hover:bg-opacity-80 transition duration-300">
+            Get Started
           </button>
         </div>
       </div>
 
       {/* Right Section: Image */}
-      <div className="">
+      <div className="hidden lg:block">
         <img
           src="/promo-logo.png"
           alt="Hexagonal Design"

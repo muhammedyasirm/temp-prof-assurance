@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ResponsiveSectionedBackground from './MobileView/mobileViewBackgroundSection';
 
 const SectionedBackground = () => {
   const sections = [
@@ -35,8 +36,9 @@ const SectionedBackground = () => {
   const [currentBackground, setCurrentBackground] = useState(sections[0].backgroundImage);
 
   return (
-    <div
-      className="relative w-full h-[80vh] bg-cover bg-center transition-all duration-500"
+    <>
+      <div
+      className="relative w-full h-[80vh] bg-cover bg-center transition-all duration-500 lg-down:hidden block"
       style={{ backgroundImage: `url(${currentBackground})` }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-10"></div> {/* Overlay */}
@@ -77,6 +79,10 @@ const SectionedBackground = () => {
         ))}
       </div>
     </div>
+    <div className='lg-down:block hidden'>
+      <ResponsiveSectionedBackground />
+    </div>
+    </>
   );
 };
 

@@ -4,8 +4,8 @@ import CardSection from '../ServiceCard/serviceCard';
 const AnalyticsCardSection = () => {
   const cards = [
     {
-      title: 'Chart Analysis 1',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      title: 'RA Maturity Optimization',
+      description: 'Optimize your technology, processes, and reporting to meet industry standards and improve organizational performance.',
       buttonText: 'Read More',
       defaultButtonColor: 'bg-transparent border-primary-orange text-primary-orange',
       hoverButtonColor: 'hover:bg-primary-orange hover:text-white',
@@ -13,8 +13,8 @@ const AnalyticsCardSection = () => {
       borderColor: 'hover:border-primary-orange',
     },
     {
-      title: 'Chart Analysis 2',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      title: 'Revenue Assurance Services',
+      description: 'Comprehensive solutions for billing, network management, and usage control, ensuring better financial outcomes.',
       buttonText: 'Read More',
       defaultButtonColor: 'bg-transparent border-primary-green text-primary-green',
       hoverButtonColor: 'hover:bg-primary-green hover:text-white',
@@ -22,8 +22,8 @@ const AnalyticsCardSection = () => {
       borderColor: 'hover:border-primary-green',
     },
     {
-      title: 'Chart Analysis 3',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      title: 'Advanced Fraud Protection',
+      description: 'Protect your business with advanced fraud detection and prevention, securing your revenue and operations.',
       buttonText: 'Read More',
       defaultButtonColor: 'bg-transparent border-primary-blue text-primary-blue',
       hoverButtonColor: 'hover:bg-primary-blue hover:text-white',
@@ -47,13 +47,13 @@ const AnalyticsCardSection = () => {
       </div>
 
       {/* Chart Cards Section */}
-      <div className="max-w-6xl md-down:max-w-full mx-auto">
-        <h1 className='text-white flex justify-center text-5xl py-4 mt-3 font-barlow'>Some Title Here</h1>
-        <div className="flex justify-center md-down:flex-col md-down:gap-2 space-x-4 md-down:space-x-0 md-down:items-center mt-10">
+      <div className="max-w-6xl mx-auto">
+        <h1 className='text-white flex justify-center text-5xl py-4 mt-11 font-barlow'>Some Title Here</h1>
+        <div className="flex flex-wrap md-down:flex-col md-down:p-5 justify-center gap-6 mt-10">
           {cards.map((card, index) => (
             <div
               key={index}
-              className={`border-2 border-gray-600 cursor-pointer ${card.borderColor} p-4 w-1/3 md-down:w-[90%] flex flex-col items-center gap-5 bg-black bg-opacity-65 hover:shadow-lg transition duration-300`}
+              className={`border-2 border-gray-600 cursor-pointer ${card.borderColor} p-4 w-[100%] sm:w-[90%] md:w-[45%] lg:w-[30%] flex flex-col items-center gap-5 bg-black bg-opacity-65 hover:shadow-lg transition duration-300`}
             >
               <img src={card.imgSrc} alt={card.title} className="w-full h-40 object-cover" />
               <div className="text-center text-white">
