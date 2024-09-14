@@ -8,10 +8,10 @@ const Footer = () => {
     >
 
       {/* Top Section */}
-      <div className="bg-primary-blue rounded-md py-8 px-6 md:px-16 flex lg-down:flex-col  lg-down:justify-start items-center justify-between">
+      <div className="bg-primary-blue rounded-md py-8 lg-down:py-4 px-6 md:px-16 flex lg-down:flex-col  lg-down:justify-start items-center justify-between">
         <div>
-          <h3 className="text-2xl md:text-3xl font-bold lg-down:mb-4">Ready for a next project?</h3>
-          <p className="text-lg">Let's get started!</p>
+          <h3 className="text-2xl md:text-3xl font-bold lg-down:mb-2">Ready for a next project?</h3>
+          <p className="text-lg lg-down:mb-4">Let's get started!</p>
         </div>
         <button className="bg-primary-orange text-white px-8 py-3 rounded font-bold shadow-md hover:bg-gray-800 transition duration-300">
           Contact us

@@ -1,28 +1,28 @@
-import React from 'react';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HeaderTop from './components/Header/headerTop';
-import Banner from './components/Banner/banner';
-import AnalyticsCardSection from './components/AnalyticsCard/analyticsCardSection';
-import ProfitAssurance from './components/AboutPoints/aboutPoints';
-import SectionedBackground from './components/BackgroundSection/backgroundSection';
-import PromoSection from './components/TiltleText/titleText';
-import TestimonialsSection from './components/TestimonialSection/testimonialSection';
-import ConferenceSection from './components/ConferenceSection/conferenceSection';
 import Footer from './components/Footer/footer';
-
+import HomePage from "./pages/Home/homePage";
+import ContactPage from "./pages/Contact/contactPage";
+import BlogPage from "./pages/Blog/blog";
+// import ServicePage from './pages/ServicePage';
+// import CaseStudyPage from './pages/CaseStudyPage';
 
 function App() {
   return (
+    <Router>
       <>
-      <HeaderTop />
-      <Banner />
-      <AnalyticsCardSection />
-      <ProfitAssurance />
-      <SectionedBackground />
-      <PromoSection />
-      <TestimonialsSection />
-      <ConferenceSection />
-      <Footer />
+        <HeaderTop />
+        <Routes>
+          <Route path="/" element={<HomePage />} /> {/* Set HomePage */}
+          {/* <Route path="/service" element={<ServicePage />} />
+          <Route path="/case-study" element={<CaseStudyPage />} /> */}
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+        <Footer />
       </>
+    </Router>
   );
 }
 

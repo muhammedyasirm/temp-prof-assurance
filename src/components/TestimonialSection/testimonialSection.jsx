@@ -55,11 +55,11 @@ const TestimonialsSection = () => {
               className="bg-[#1F1F1F] bg-opacity-60 p-6 lg-down:p-3 rounded-lg shadow-lg text-center"
             >
               <div className="text-center text-primary-orange text-4xl font-bold">“</div>
-              <p className="text-[1.5rem] lg-down:text-base mb-6 font-montserrat">
+              <p className="text-[1.2rem] lg-down:text-base mb-6 font-montserrat">
                 {testimonial.quote}
               </p>
-              <h4 className="text-lg text-primary-green font-semibold font-montserrat">{testimonial.author}</h4>
-              <p className="text-sm text-primary-blue font-montserrat">{testimonial.jobTitle}</p>
+                <h4 className="text-lg text-primary-green font-semibold font-montserrat">{testimonial.author}</h4>
+                <p className="text-sm text-primary-blue font-montserrat">{testimonial.jobTitle}</p>
             </div>
           ))}
         </div>
