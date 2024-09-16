@@ -5,8 +5,7 @@ import Footer from './components/Footer/footer';
 import HomePage from "./pages/Home/homePage";
 import ContactPage from "./pages/Contact/contactPage";
 import BlogPage from "./pages/Blog/blog";
-// import ServicePage from './pages/ServicePage';
-// import CaseStudyPage from './pages/CaseStudyPage';
+import CaseStudyPage from "./pages/CaseStudy/caseStudy";
 
 function App() {
   return (
@@ -15,8 +14,8 @@ function App() {
         <HeaderTop />
         <Routes>
           <Route path="/" element={<HomePage />} /> {/* Set HomePage */}
-          {/* <Route path="/service" element={<ServicePage />} />
-          <Route path="/case-study" element={<CaseStudyPage />} /> */}
+          {/* <Route path="/service" element={<ServicePage />} /> */}
+          <Route path="/case-study" element={<CaseStudyPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>

@@ -26,11 +26,11 @@ const TestimonialsSection = () => {
 
   return (
     <div
-      className="bg-black text-white py-16 px-8 lg-down:px-6 relative"
-      style={{ backgroundImage: "url('/footer-bg.png')", backgroundSize: '70%', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
+      className="bg-black text-white py-16 px-24 lg-down:px-6"
+      style={{ backgroundImage: "url('/footer-bg.png')",  backgroundRepeat: 'no-repeat' }}
     >
       {/* <div className="absolute inset-0 bg-black bg-opacity-40 z-0"></div> */}
-      <div className="z-10 max-w-7xl mx-auto grid grid-cols-2 lg-down:grid-cols-1 gap-8">
+      <div className="z-10 grid grid-cols-2 lg-down:grid-cols-1 gap-8">
         {/* Left Section */}
         <div>
           <h2 className="text-5xl lg-down:text-4xl font-bold mb-4 font-barlow">TESTIMONIALS</h2>
