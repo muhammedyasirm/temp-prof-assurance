@@ -5,7 +5,7 @@ import CompactHeader from "./compactHeader";
 const Header = () => {
   const navItems = [
     { name: "HOME", to: "/" },
-    { name: "SERVICE", to: "/service" },
+    { name: "SERVICES", to: "/service" },
     { name: "CASE STUDY", to: "/case-study" },
     { name: "EVENTS", to: "/events" },
     { name: "BLOG", to: "/blog" },

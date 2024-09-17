@@ -5,19 +5,19 @@ const CardSection = () => {
     {
       title: 'Advanced Analysis',
       description: 'Growth, Focus & Analysis',
-      icon: '/orange-cube.png', // Use the orange cube image
+      icon: '/orange-cube.png',
       borderColor: 'hover:border-primary-orange',
     },
     {
       title: 'Corporate Finance',
       description: 'Strategy is the Foundation',
-      icon: '/green-cube.png', // Use the green cube image
+      icon: '/green-cube.png',
       borderColor: 'hover:border-primary-green',
     },
     {
-      title: 'Business Consultation',
+      title: 'Strategic Advisory',
       description: 'Professional Skilled Team',
-      icon: '/blue-cube.png', // Use the blue cube image
+      icon: '/blue-cube.png',
       borderColor: 'hover:border-primary-blue',
     },
   ];
@@ -28,7 +28,7 @@ const CardSection = () => {
         {cards.map((card, index) => (
           <div
             key={index}
-            className={`sm-down:w-full border-2 border-[#C1C1C1] ${card.borderColor} p-4 xl-down:p-2 flex justify-center gap-5 cursor-pointer bg-[#1C1C1C] hover:shadow-lg transform hover:scale-105 transition duration-300 ease-in-out`}
+            className={`sm-down:w-full min-w-[25%] border-2 border-[#C1C1C1] ${card.borderColor} p-2 flex justify-center gap-5 cursor-pointer bg-[#1C1C1C] hover:shadow-lg transform hover:scale-105 transition duration-300 ease-in-out`}
           >
             <div className="flex items-center justify-center">
               <img src={card.icon} alt={card.title} className="w-12 h-12" />

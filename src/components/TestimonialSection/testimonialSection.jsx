@@ -1,4 +1,5 @@
 import React from 'react';
+import { Quotes } from '@carbon/icons-react';
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -54,7 +55,9 @@ const TestimonialsSection = () => {
               key={index}
               className="bg-[#1F1F1F] bg-opacity-60 p-6 lg-down:p-3 rounded-lg shadow-lg text-center"
             >
-              <div className="text-center text-primary-orange text-4xl font-bold">“</div>
+              <div className="flex justify-center text-primary-orange text-4xl font-bold">
+                <Quotes size={22}/>
+              </div>
               <p className="text-[1.2rem] lg-down:text-base mb-6 font-montserrat">
                 {testimonial.quote}
               </p>

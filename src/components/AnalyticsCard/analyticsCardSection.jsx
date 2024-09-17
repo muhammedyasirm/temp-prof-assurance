@@ -9,7 +9,7 @@ const AnalyticsCardSection = () => {
       buttonText: 'Read More',
       defaultButtonColor: 'bg-transparent border-primary-orange text-primary-orange',
       hoverButtonColor: 'hover:bg-primary-orange hover:text-white',
-      imgSrc: '/chart1.png', // Replace with the actual image path
+      imgSrc: '/chart1.png',
       borderColor: 'hover:border-primary-orange',
     },
     {
@@ -18,7 +18,7 @@ const AnalyticsCardSection = () => {
       buttonText: 'Read More',
       defaultButtonColor: 'bg-transparent border-primary-green text-primary-green',
       hoverButtonColor: 'hover:bg-primary-green hover:text-white',
-      imgSrc: '/chart2.png', // Replace with the actual image path
+      imgSrc: '/chart2.png',
       borderColor: 'hover:border-primary-green',
     },
     {
@@ -27,7 +27,7 @@ const AnalyticsCardSection = () => {
       buttonText: 'Read More',
       defaultButtonColor: 'bg-transparent border-primary-blue text-primary-blue',
       hoverButtonColor: 'hover:bg-primary-blue hover:text-white',
-      imgSrc: '/chart3.png', // Replace with the actual image path
+      imgSrc: '/chart3.png',
       borderColor: 'hover:border-primary-blue',
     },
   ];
@@ -35,20 +35,18 @@ const AnalyticsCardSection = () => {
   return (
     <div className="relative w-full bg-black py-10"
       style={{
-        backgroundImage: `url('/analytics-bg.png')`, // Adding the background image
+        backgroundImage: `url('/analytics-bg.png')`,
         backgroundPosition: 'right',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'auto 100%',
       }}
     >
-      {/* CardSection Positioned on Top */}
       <div className="left-0 w-full flex justify-center items-center z-20">
-        <CardSection /> {/* Include the CardSection component */}
+        <CardSection />
       </div>
 
-      {/* Chart Cards Section */}
-      <div className="max-w-6xl mx-auto">
-        <h1 className='text-white flex justify-center text-5xl py-4 mt-11 font-barlow'>Some Title Here</h1>
+      <div className="max-w-6xl mx-auto py-10">
+        <h1 className='text-white flex justify-center text-5xl py-4 font-barlow'>Some Title Here</h1>
         <div className="flex flex-wrap md-down:flex-col md-down:p-5 justify-center gap-6 mt-10">
           {cards.map((card, index) => (
             <div
