@@ -32,35 +32,35 @@ const Footer = () => {
         <div>
           <h4 className="text-lg font-semibold mb-4">Customers</h4>
           <ul>
-            <li><a href="#" className="hover:underline">Buyer</a></li>
-            <li><a href="#" className="hover:underline">Supplier</a></li>
+            <li><a href="www.google.com" className="hover:underline">Buyer</a></li>
+            <li><a href="www.google.com" className="hover:underline">Supplier</a></li>
           </ul>
         </div>
 
         <div>
           <h4 className="text-lg font-semibold mb-4">Company</h4>
           <ul>
-            <li><a href="#" className="hover:underline">About us</a></li>
-            <li><a href="#" className="hover:underline">Careers</a></li>
-            <li><a href="#" className="hover:underline">Contact us</a></li>
+            <li><a href="www.google.com" className="hover:underline">About us</a></li>
+            <li><a href="www.google.com" className="hover:underline">Careers</a></li>
+            <li><a href="www.google.com" className="hover:underline">Contact us</a></li>
           </ul>
         </div>
 
         <div>
           <h4 className="text-lg font-semibold mb-4">Further Information</h4>
           <ul>
-            <li><a href="#" className="hover:underline">Terms & Conditions</a></li>
-            <li><a href="#" className="hover:underline">Privacy Policy</a></li>
+            <li><a href="www.google.com" className="hover:underline">Terms & Conditions</a></li>
+            <li><a href="www.google.com" className="hover:underline">Privacy Policy</a></li>
           </ul>
         </div>
       </div>
 
       <div className="flex justify-center space-x-6 py-4">
-        <a href="#"><LogoFacebook size={24}/></a>
-        <a href="#"><LogoTwitter size={24} /></a>
-        <a href="#"><LogoLinkedin size={24} /></a>
-        <a href="#"><LogoMedium size={24} /></a>
-        <a href="#"><LogoInstagram size={24} /></a>
+        <a href="www.google.com"><LogoFacebook size={24}/></a>
+        <a href="www.google.com"><LogoTwitter size={24} /></a>
+        <a href="www.google.com"><LogoLinkedin size={24} /></a>
+        <a href="www.google.com"><LogoMedium size={24} /></a>
+        <a href="www.google.com"><LogoInstagram size={24} /></a>
       </div>
     </div>
   );
