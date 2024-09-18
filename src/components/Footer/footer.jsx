@@ -1,4 +1,5 @@
 import React from 'react';
+import { LogoFacebook, LogoTwitter, LogoLinkedin, LogoMedium, LogoInstagram } from '@carbon/icons-react';
 
 const Footer = () => {
   return (
@@ -8,25 +9,24 @@ const Footer = () => {
     >
 
       {/* Top Section */}
-      <div className="bg-primary-blue rounded-md py-8 lg-down:py-4 px-6 md:px-16 flex lg-down:flex-col  lg-down:justify-start items-center justify-between">
-        <div>
+      <div className="bg-transparent rounded-md py-8 lg-down:py-4 px-20 md-down:px-4 flex justify-between items-center">
+        <div className='md-down:max-w-[14rem]'>
           <h3 className="text-2xl md:text-3xl font-bold lg-down:mb-2">Ready for a next project?</h3>
           <p className="text-lg lg-down:mb-4">Let's get started!</p>
         </div>
-        <button className="bg-primary-orange text-white px-8 py-3 rounded font-bold shadow-md hover:bg-gray-800 transition duration-300">
+        <button className="bg-primary-orange text-sm text-white px-8 md-down:px-2 py-3 rounded font-bold hover:bg-gray-800 transition duration-300">
           Contact us
         </button>
       </div>
 
       {/* Footer Links Section */}
-      <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+      <div className="max-w-6xl mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-center md:text-left">
         <div>
           <img
             src="/profit-assurance-logo.png"
             alt="Logo"
             className="h-12 w-auto"
-          />{" "}
-          <p>© 2019</p>
+          />
         </div>
 
         <div>
@@ -55,13 +55,12 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Social Media Icons */}
       <div className="flex justify-center space-x-6 py-4">
-        <a href="#" className="text-xl text-purple-400 hover:text-white"><i className="fab fa-facebook"></i></a>
-        <a href="#" className="text-xl text-purple-400 hover:text-white"><i className="fab fa-twitter"></i></a>
-        <a href="#" className="text-xl text-purple-400 hover:text-white"><i className="fab fa-linkedin"></i></a>
-        <a href="#" className="text-xl text-purple-400 hover:text-white"><i className="fab fa-medium"></i></a>
-        <a href="#" className="text-xl text-purple-400 hover:text-white"><i className="fab fa-telegram"></i></a>
+        <a href="#"><LogoFacebook size={24}/></a>
+        <a href="#"><LogoTwitter size={24} /></a>
+        <a href="#"><LogoLinkedin size={24} /></a>
+        <a href="#"><LogoMedium size={24} /></a>
+        <a href="#"><LogoInstagram size={24} /></a>
       </div>
     </div>
   );

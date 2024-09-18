@@ -22,7 +22,7 @@ const Banner = () => {
         <h1 className="text-[2.4rem] leading-[2.3rem] md:text-[2.5rem] md:leading-[2.5rem] xl:text-[4.5rem] xl:leading-[4.5rem] 2xl:text-[5.5rem] 2xl:leading-[5.5rem] font-bold font-barlow">
           Profit Assurance
         </h1>
-        <p className="mt-4 text-[2.2rem] md-down:text-[1.4rem] leading-8 font-montserrat">
+        <p className="mt-4 text-[2.2rem] md-down:text-[1.4rem] leading-10 font-montserrat">
           Since 2014, we’ve enhanced profits and secured{" "}
           <span className="text-primary-orange font-bold">revenue</span> through
           telecom fraud management and

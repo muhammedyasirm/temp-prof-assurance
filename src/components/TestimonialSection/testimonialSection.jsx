@@ -9,7 +9,7 @@ const TestimonialsSection = () => {
       jobTitle: "Global Telecom Network",
     },
     {
-      quote: "Their fraud management system reduced our fraudulent activities by 40%, giving us peace of mind and boosting revenue protection.",
+      quote: "Their fraud management system cut our fraudulent activities by 40%, providing peace of mind and enhancing revenue protection.",
       author: "John Smith",
       jobTitle: "Regional Bank, Africa",
     },
@@ -30,39 +30,37 @@ const TestimonialsSection = () => {
       className="bg-black text-white py-16 px-24 lg-down:px-6"
       style={{ backgroundImage: "url('/footer-bg.png')",  backgroundRepeat: 'no-repeat' }}
     >
-      {/* <div className="absolute inset-0 bg-black bg-opacity-40 z-0"></div> */}
-      <div className="z-10 grid grid-cols-2 lg-down:grid-cols-1 gap-8">
-        {/* Left Section */}
+      <div className="z-10 flex lg-down:flex-col gap-8">
         <div>
           <h2 className="text-5xl lg-down:text-4xl font-bold mb-4 font-barlow">TESTIMONIALS</h2>
-          <p className="text-[1.5rem] lg-down:text-base mb-6 font-montserrat">
+          <p className="text-lg lg-down:text-base mb-6 font-montserrat">
             Don’t just take our word for it! We’ve worked with tons of incredible people on ventures across all industries. One thing they all have in common is that they love our service.
           </p>
           <button className="bg-primary-orange text-white px-6 py-3 text-lg rounded hover:bg-opacity-80 transition duration-300 mb-8">
             View Cases
           </button>
-
-          {/* Case Study Block */}
-          <div className="bg-[#1F1F1F] bg-opacity-60 py-48 lg-down:py-24 px-28 lg-down:px-14 text-center rounded-lg shadow-lg">
+          <div className="bg-[#232323] bg-opacity-[90%] py-40 lg-down:py-24 px-20 lg-down:px-14 text-center rounded-lg shadow-lg">
             <h3 className="text-xl font-bold font-barlow">CASE STUDY</h3>
           </div>
         </div>
 
-        {/* Right Section: Testimonial Cards */}
         <div className="grid grid-cols-2 lg-down:grid-cols-1 gap-8">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-[#1F1F1F] bg-opacity-60 p-6 lg-down:p-3 rounded-lg shadow-lg text-center"
+              className="bg-[#232323] bg-opacity-[90%] py-1 px-12 lg-down:p-3 rounded-lg  shadow-inner text-center flex flex-col justify-center"
+              style={{
+                boxShadow: "inset 0 0 10px rgba(59, 59, 59, 0.5)",
+              }}
             >
-              <div className="flex justify-center text-primary-orange text-4xl font-bold">
-                <Quotes size={22}/>
+              <div className="flex justify-center text-primary-orange text-4xl font-bold mb-2">
+                <Quotes size={28}/>
               </div>
-              <p className="text-[1.2rem] lg-down:text-base mb-6 font-montserrat">
+              <p className="text-lg lg-down:text-base mb-6 font-montserrat">
                 {testimonial.quote}
               </p>
                 <h4 className="text-lg text-primary-green font-semibold font-montserrat">{testimonial.author}</h4>
-                <p className="text-sm text-primary-blue font-montserrat">{testimonial.jobTitle}</p>
+                <p className="text-sm text-[#0090fc] font-montserrat">{testimonial.jobTitle}</p>
             </div>
           ))}
         </div>

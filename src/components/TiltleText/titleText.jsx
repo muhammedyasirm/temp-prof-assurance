@@ -1,57 +1,61 @@
 import React from "react";
 
 const PromoSection = () => {
-  // const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 1030);
-
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setIsSmallScreen(window.innerWidth <= 1030);
-  //   };
-
-  //   window.addEventListener("resize", handleResize);
-
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, []);
-
   return (
-        <div
-        className=" bg-[#1C1C1C] pl-24 lg-down:px-6 text-white flex lg-down:flex-col lg-down:bg-cover lg-down:bg-center lg-down:bg-no-repeat items-center justify-between"
-        //  style={{
-        //    backgroundImage: isSmallScreen ? "url('/promo-logo.png')" : "none",
-        //  }}
-      >
-        {/* Overlay for small screens */}
-        <div className="py-16 lg-down:block hidden absolute inset-0 bg-black bg-opacity-50"></div>
+    // <div className=" bg-[#1C1C1C]  lg-down:px-6 text-white lg-down:flex-col lg-down:bg-cover lg-down:bg-center lg-down:bg-no-repeat">
+    //   <div className="flex items-center gap-[35rem] justify-end">
+    //     <div className="lg-down:pr-6 lg-down:pl-0 py-14 max-w-[45%] lg-down:max-w-full flex flex-col justify-center h-full z-10">
+    //     <h1 className="text-5xl font-bold font-barlow lg-down:text-4xl">
+    //       ENHANCE YOUR REVENUE
+    //     </h1>
+    //     <p className="text-[1.5rem] mt-7 font-montserrat lg-down:text-base lg-down:mt-4">
+    //       Maximize your business potential with our tailored solutions. From
+    //       revenue assurance to fraud management, Profit Assurance Technology
+    //       delivers expert services to enhance your financial performance and
+    //       safeguard your operations. Let us help you achieve your goals.
+    //     </p>
+    //     <div className="flex lg-down:justify-start justify-end lg-down:mt-5 mt-7">
+    //       <button className="bg-primary-orange text-white py-3 px-8 text-lg rounded hover:bg-opacity-80 transition duration-300">
+    //         Get Started
+    //       </button>
+    //     </div>
+    //   </div>
 
-        {/* Left Section: Text Content */}
-        <div className="lg-down:pr-6 py-14 max-w-[45%] lg-down:max-w-full flex flex-col h-full relative z-10">
-          <h1 className="text-5xl font-bold font-barlow lg-down:text-4xl">
-            ENHANCE YOUR REVENUE
-          </h1>
-          <p className="text-[1.5rem] mt-7 font-montserrat lg-down:text-base lg-down:mt-4">
-            Maximize your business potential with our tailored solutions. From
-            revenue assurance to fraud management, Profit Assurance Technology
-            delivers expert services to enhance your financial performance and
-            safeguard your operations. Let us help you achieve your goals.
-          </p>
-          <div className="flex lg-down:justify-start justify-end lg-down:mt-5 mt-7">
-            <button className="bg-primary-orange text-white py-3 px-8 text-lg rounded hover:bg-opacity-80 transition duration-300">
-              Get Started
-            </button>
-          </div>
-        </div>
-
-        {/* Right Section: Image */}
-        <div className="hidden lg:block">
-          <img
-            src="/promo-logo.png"
-            alt="Hexagonal Design"
-            className="h-[80vh] object-fill"
-          />
+    //   <div className="flex justify-end justify-items-end lg-down:hidden">
+    //     <img
+    //       src="/promo-logo.png"
+    //       alt="Hexagonal Design"
+    //       className="pt-3 w-[80%] object-fill"
+    //     />
+    //   </div>
+    //   </div>
+    // </div>
+    <div className="bg-[#1C1C1C] pl-24 lg-down:pl-0 text-white gap-28 grid grid-cols-2 lg-down:grid-cols-1 items-center">
+      <div className="flex flex-col lg-down:pl-6 py-14 relative z-10">
+        <h1 className="text-5xl font-bold font-barlow lg-down:text-4xl">
+          ENHANCE YOUR REVENUE
+        </h1>
+        <p className="text-lg mt-7 font-montserrat lg-down:text-base lg-down:mt-4">
+          Maximize your business potential with our tailored solutions. From
+          revenue assurance to fraud management, Profit Assurance Technology
+          delivers expert services to enhance your financial performance and
+          safeguard your operations. Let us help you achieve your goals.
+        </p>
+        <div className="flex lg-down:justify-start justify-end lg-down:mt-5 mt-7">
+          <button className="bg-primary-orange text-white py-3 px-8 text-lg rounded hover:bg-opacity-80 transition duration-300">
+            Get Started
+          </button>
         </div>
       </div>
+
+      <div className="flex justify-end justify-items-end lg-down:hidden">
+        <img
+          src="/promo-logo.png"
+          alt="Hexagonal Design"
+          className="pt-3 w-[70%] object-fill"
+        />
+      </div>
+    </div>
   );
 };
 
